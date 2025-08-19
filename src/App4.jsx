@@ -11,7 +11,7 @@ function App() {
     <div>
       <h1>React Timer</h1>
 
-      {showTimer && <Timer />} {/* 타이머 컴포넌트 표시 여부 */}
+      {showTimer && <Timer />} {/* 타이머 컴포넌트 표시 여부, && 왼쪽값이 true 이면 Timer 컴포넌트가 렌더링됨, false, falsy일때는 렌더링되지 않음 */}
 
       <button onClick={() => setShowTimer(!showTimer)}>
         {showTimer ? "Remove Timer" : "Show Timer"}
